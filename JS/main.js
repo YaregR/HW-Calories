@@ -22,9 +22,9 @@ const test = () => {
     
 }
 
-const {ingridients} = test();
+const { ingridients } = test();
 
-let notAlergen = ingridients.filter (ev => ev.alergen == false);
+let notAlergen = ingridients.filter(ev => ev.alergen == false);
 
 let totalCal = notAlergen.reduce((sum, val) => sum + val.kkal, 0);
 
